@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer ></script>
+</head>
+<body>
+
+    <div id="container1" class="container1" >
+    <div  id="containerChat" class="containerChat" >
+     <h1 id="VacationPlanner-h1" class="VacationPlanner-h1">Plan here your trip!</h1>
+
+<!--        prompt input-->
+
+        <div id="prompt" class="prompt">
+           <label for="location" >Where do you want to go?</label>
+            <p class="examples">Barcelona, Izmir, Belgrade ect.</p>
+            <input type="text" id="location" placeholder="Your Destination:" />
+
+            <label for="typeTrip" >What kind of trip do you want?</label>
+            <p class="examples">Safari, City trip, Beaches ...</p>
+            <input type="text" id="typeTrip" placeholder="Your type of trip:" >
+        </div>
+
+<!--        reply-->
+
+        <div id="replyField" class="reply-field">
+                <label for="replyUser" >Changes to make</label>
+                <input type="text" id="replyUser"  placeholder="the reply" />
+        </div>
+
+        <div id="send" class="send" >
+            <button id="send-button" onclick="retrieveMessage() " > SEND</button>
+        </div>
+
+    </div>
+    </div>
+
+        <div id="container2" class="container2" >
+            <div id="suggestions" class="suggestions" >
+                <div class="suggestionCard">
+                    <h2 id="suggestion2">Help</h2>
+                    <p> thing I can help you with</p>
+                </div>
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+
+
+<!--        response-->
+
+        <div id="container3">
+            <div id="responseField" >
+
+            </div>
+        </div>
+
+</body>
+</html>
